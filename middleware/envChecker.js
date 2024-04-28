@@ -8,6 +8,7 @@ const envChecker = (req,res,next)=>{
             message:"please add Jwt secret"
         })
     }
+    next()
 }
 module.exports={
     envChecker

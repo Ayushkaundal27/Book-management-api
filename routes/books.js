@@ -1,13 +1,12 @@
 const express =  require('express');
+var year  = new Date().getFullYear()
 const bookRouter = express.Router();
-const mongoose = require('mongoose');
 bookRouter.use(express.json());
 require('dotenv').config();
 const zod = require('zod');
 const { bookdb } = require('../models');
 const { authware } = require('../middleware/authware');
 const { inputCheck, updateCheck } = require('../validation');
-mongoose.connect(process.env.MONGODB_URL)
 bookRouter.post('/add',async(req,res)=>{
   var check = inputCheck.safeParse(req.body)
   if(!check.success)return res.status(400).json({

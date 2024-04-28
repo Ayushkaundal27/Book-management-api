@@ -3,8 +3,6 @@ const userRouter = express.Router();
 userRouter.use(express.json())
 require('dotenv').config();
 const zod  = require('zod');
-const mongoose  = require('mongoose');
-mongoose.connect(process.env.MONGODB_URL)
 const { userdb } = require('../models');
 const jwt = require('jsonwebtoken');
 const encode = require('bcryptjs');
