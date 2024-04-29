@@ -30,10 +30,10 @@ Feel free to explore the API and provide feedback or suggestions for improvement
  1) POST /api/v1/user/signup: Register a new user and generate JWT token.
  2) POST /api/v1/user/signin: Login user and generate JWT token.
 ### 2. Books Endpoints
- 1) GET     /api/book?author="name"&publicationYear=year Retrieve a specific  or all books by Author and publication year.
- 2) POST    /api/book/add Create a new Book.
- 3) PUT     /api/book/update Update an existing Book.
- 4) DELETE  /api/book/Delete Delete a Book.
+ 1) GET     /api/v1/book?author="name"&publicationYear=year Retrieve a specific  or all books by Author and publication year.
+ 2) POST    /api/v1/book/add Create a new Book.
+ 3) PUT     /api/v1/book/update Update an existing Book.
+ 4) DELETE  /api/v1/book/Delete Delete a Book.
 
 
 ### 3. Technologies Used
