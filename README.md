@@ -33,7 +33,7 @@ Feel free to explore the API and provide feedback or suggestions for improvement
  1) GET     /api/v1/book?author="name"&publicationYear=year Retrieve a specific  or all books by Author and publication year.
  2) POST    /api/v1/book/add Create a new Book.
  3) PUT     /api/v1/book/update Update an existing Book.
- 4) DELETE  /api/v1/book/Delete Delete a Book.
+ 4) DELETE  /api/v1/book/delete Delete a Book.
 
 
 ### 3. Technologies Used
